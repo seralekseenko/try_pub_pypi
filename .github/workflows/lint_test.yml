@@ -7,6 +7,14 @@ name: Lint & Tests
 on:
   pull_request:
     branches: [ "main" ]
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
+  workflow_dispatch:
+    tags:
+      description: 'Purpose of Run This Workflow?'
+      required: true
+      type: string
+
 
 permissions:
   contents: read
@@ -36,4 +44,3 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
-           
