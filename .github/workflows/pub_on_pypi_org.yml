@@ -20,7 +20,7 @@ permissions:
 jobs:
 
   call_test_run:
-    uses: ./.github/workflows/lint_test.yaml
+    uses: ./.github/workflows/lint_test.yml
 
   publish:
     runs-on: ubuntu-latest
