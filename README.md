@@ -1,4 +1,4 @@
-[![Publish Python 🐍 distribution 📦 to PyPI and TestPyPI](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/pub_on_pypi_org.yml/badge.svg?branch=main&event=release)](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/pub_on_pypi_org.yml)
+[![Publish Python 🐍 distribution 📦 to PyPI and TestPyPI](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/pub_on_pypi_org.yml/badge.svg)](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/pub_on_pypi_org.yml)
 
 # try_pub_pypi
 

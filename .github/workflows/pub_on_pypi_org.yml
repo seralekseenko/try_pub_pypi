@@ -11,8 +11,6 @@ name: Publish Python 🐍 distribution 📦 to PyPI and TestPyPI
 on:
   release:
     types: [published]
-    tags:
-      - 'v*'
 
 permissions:
   contents: read
