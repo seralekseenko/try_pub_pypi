@@ -13,7 +13,7 @@ install_requires = read_requirements()
 
 setup(
     name="try_pub_pypi",  # Назва вашого пакету
-    version="0.0.3",  # Початкова версія
+    version="0.0.4",  # Початкова версія
     author="seroleksiienko",  # Ваше ім'я або ім'я організації
     author_email="seroleksiienko@gmail.com",  # Ваша електронна адреса
     description="A small example package",  # Короткий опис пакету
