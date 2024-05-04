@@ -13,17 +13,13 @@ on:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
   workflow_dispatch:
-    tags:
-      description: 'Purpose of Run This Workflow?'
-      required: true
-      type: string
 
 permissions:
   contents: read
 
 jobs:
   deploy:
-
+    
     runs-on: ubuntu-latest
 
     steps:
