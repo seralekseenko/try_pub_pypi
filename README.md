@@ -1,5 +1,7 @@
 [![Publish Python 🐍 distribution 📦 to PyPI and TestPyPI](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/pub_on_pypi_org.yml/badge.svg)](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/pub_on_pypi_org.yml)
 
+[![Lint & Tests](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/lint_test.yml/badge.svg)](https://github.com/seralekseenko/try_pub_pypi/actions/workflows/lint_test.yml)
+
 # try_pub_pypi
 
 Only test to automate publishing to pypi.org
