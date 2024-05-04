@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: read # 'write' for GitHub release
 
 jobs:
 
@@ -23,6 +23,7 @@ jobs:
     uses: ./.github/workflows/lint_test.yml
 
   publish:
+    needs: call_test_run
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,8 +49,11 @@ jobs:
           password: ${{ secrets.PYPI_API_TOKEN }}
 
 #      - name: Create GitHub Release
-#        uses: softprops/action-gh-release@v1
-#        with:
-#          files: dist/*
 #        env:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          tag: ${{ github.ref_name }}
+#        run: |
+#          gh release create "$tag" \
+#              --repo="$GITHUB_REPOSITORY" \
+#              --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
+#              --generate-notes
